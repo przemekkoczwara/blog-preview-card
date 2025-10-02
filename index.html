@@ -1,13 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Mentor | Blog preview card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="app"></div>
+    <div class="container">
+      <div class="card">
+        <img src="./src/assets/images/illustration-article.svg" alt="Illustration representing article content" />
+        <div class="card-details">
+        <p class="card-header">Learning</p>
+        <p class="card-publish-date">Published 21 Dec 2023</p>
+        <h2 class="card-title">HTML & CSS foundations</h2> <!-- Using <h2> because this card is a reusable component -->
+        <p class="card-text">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+        <div class="user-card">
+          <img src="./src/assets/images/image-avatar.webp" alt="Profile picture of Greg Hooper">
+          <p class="user-name">Greg Hooper</p>
+        </div>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
