@@ -1,9 +1,9 @@
 
-# Frontend Mentor - QR code component
+# Frontend Mentor - Blog Preview Card
 
 ![My QR Code Screenshot](./src/assets/images/screenshot-blog-card.png)
 
-A simple solution for the [Frontend Mentor](https://www.frontendmentor.io) challenge -QR Code Component.
+A simple solution for the [Frontend Mentor](https://www.frontendmentor.io) challenge - Blog preview card.
 
 This project was created to practive HTML & CSS following the disign in Figma.
 
