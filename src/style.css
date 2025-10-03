@@ -93,14 +93,11 @@ a {
 
 body {
   background-color: var(--bg-yellow);
-  height: 100vh;
+  /* height: 100vh;  I used this property -> container */
   color: var(--bg-grey-950);
 }
 
 .container {
-  width: 100%;
-  max-width: 375px;
-  margin: 0 auto;
   padding: 0 16px;
   height: 100vh;
   display: flex;
@@ -108,28 +105,21 @@ body {
   align-items: center;
 }
 
-@media (min-width: 1440px) {
-  .container {
-    min-width: 1024px;
-    padding: 0 32px;
-  }
-}
 
 .card {
-  width: 100%;
-  max-width: 327px;
+  /* width: 100%; block elements take up the full width of the line default, so i don't need 100% */
+  max-width: 384px;
   height: 501px;
   background-color: var(--bg-white);
   padding: 24px;
   border-radius: 20px;
   border: 1px solid var(--bg-grey-950);
   box-shadow: 8px 8px 0px var(--bg-grey-950);
+  transition: box-shadow 0.2s ease-in-out;
 }
 
 @media (min-width: 1440px) {
   .card {
-    width: 100%;
-    max-width: 384px;
     height: 522px;
   }
   .card:hover .card-title {
@@ -139,12 +129,11 @@ body {
 
   .card:hover {
     box-shadow: 12px 12px 0px var(--bg-grey-950);
-    transition: box-shadow 0.2s ease-in-out;
   }
 }
 
 .card-illustration {
-  width: 279px;
+  width: 100%;
   height: 200px;
   border-radius: 10px;
   margin-bottom: var(--spacing-300);
@@ -152,15 +141,7 @@ body {
   object-fit: cover;
 }
 
-@media (min-width: 1440px) {
-  .card-illustration {
-    width: 336px;
-    height: 200px;
-  }
-}
-
 .card-details {
-  /* height: 173px; */
   margin-bottom: var(--fs-24);
 }
 
@@ -168,7 +149,6 @@ body {
   background-color: var(--bg-yellow);
   width: fit-content;
   padding: 4px 12px;
-  text-align: center;
   border-radius: 4px;
   margin-bottom: var(--spacing-150);
 }
@@ -186,13 +166,13 @@ body {
   .card-title {
     font-size: var(--fs-24);
   }
-}
 
-@media (min-width: 1440px) {
   .card-title:hover {
     color: var(--bg-yellow);
   }
 }
+
+ 
 .card-text {
   margin-bottom: var(--spacing-150);
   color: var(--bg-grey-500);
